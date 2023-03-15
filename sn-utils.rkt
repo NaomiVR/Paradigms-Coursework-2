@@ -1,7 +1,4 @@
 (module sn-utils racket
-
-  (require racket/string)
-
   (provide sn-dict-ks-vs
            sn-dict-f
            sn-dict-entry
@@ -9,6 +6,7 @@
            sn-list->dict
            )
 
+  (require racket/string)
 
   ;; This first checks if ks and vs are infact lists, if false it will just return nothing
   ;; if true it will construct a dict object (list of nested lists) using the map function

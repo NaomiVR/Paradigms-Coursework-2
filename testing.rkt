@@ -1,9 +1,3 @@
-;; Use this space for free use.
-;; Nothing here well be marked.
-;; You may copy any numbered item
-;; for testing in REPL.
-
-
 (require racket/set)
 (require "sn-graph.rkt")
 (require "sn-social-network.rkt")

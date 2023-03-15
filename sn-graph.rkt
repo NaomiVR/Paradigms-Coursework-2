@@ -32,14 +32,14 @@
   )
 
   ;; This takes in 2 user IDs and the network, it then appens these users as friends of
-  ;; each other in the returned network
-  (define (sn-add-frndshp graph u1 u2)
-    (define (update-friends key friends)
-      (dict-update graph key (lambda (old-friends)
-                               (set-union old-friends friends))))
-    (update-friends u1 (set u2))
-    (update-friends u2 (set u1))
-    (dict-map graph cdr)
+;; each other in the returned network
+(define (sn-add-frndshp graph u1 u2)
+  (define (update-friends key friends)
+    (dict-update graph key (lambda (old-friends)
+                             (set-union old-friends (list friends)))))
+  (update-friends u1 (set u2))
+  (update-friends u2 (set u1))
+  (dict-map graph (lambda (k v) (list k (set->list v))))
   )
 
 

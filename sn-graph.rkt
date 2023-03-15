@@ -1,4 +1,3 @@
-;; Done
 (module sn-graph racket
   (provide sn-consistent
            sn-empty

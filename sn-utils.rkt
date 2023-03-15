@@ -1,5 +1,3 @@
-;; Done
-
 (module sn-utils racket
 
   (require racket/string)

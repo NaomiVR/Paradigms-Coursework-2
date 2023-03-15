@@ -1,5 +1,4 @@
 (module sn-social-network racket
-
   (provide 
    sn-ff-for
    sn-cmn-frnds-btwn
@@ -81,4 +80,3 @@
       (sn-dict-ks-vs keys vals)))
 
   )
-
